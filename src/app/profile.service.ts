@@ -28,5 +28,7 @@ export class ProfileService {
     
   }
 
-  updateProfile
+  updateProfile(username:string){
+    this.username = username;
+  }
 }
