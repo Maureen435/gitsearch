@@ -12,8 +12,19 @@
                 <ul class="list-group">
                     <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
                     <li class="list-group-item" *ngIf="profile.name">{{profile.name}}</li>
+                    <li class="list-group-item" *ngIf="profile.url">{{profile.url}}</li>
+                    <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
                 </ul>
             </div>
+            <div class="col-sm-4">
+
+            </div>
+            <p>
+                <span class="label label-default">{{profile.followers}}followers</span>
+                <span class="label label-primary">following{{profile.following}}followers</span>
+                <span class="label label-success">{{profile.public}}followers</span>
+                <span class="label label-info">{{profile.followers}}followers</span>
+            </p>
         </div>
     </div>
 </div>
