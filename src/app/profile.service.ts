@@ -21,4 +21,10 @@ export class ProfileService {
     return this.http.get("https://api.github.com/users/" + this.username + "?clientid=" + this.clientid + "&client_secret=")
     ;
   }
+
+  getProfileRepos(){
+    return this.http.get("https://api.github.com/users/" + this.username + "/repos?clientid=" + this.clientid + "&client_secret=")
+    ;
+    
+  }
 }
